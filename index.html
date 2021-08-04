@@ -7,6 +7,11 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
 
   <title>Frontend Mentor | Stats preview card component</title>
 
@@ -25,14 +30,29 @@
 
 <body>
 
-  Get insights that help your business grow.
+  <div class="card">
+    <img src="images/image-header-mobile.jpg" alt="">
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer
-  experience, and overall efficiency.
+    <h1 class="centered">Get <span class="accent">insights</span> that help your business grow.</h1>
 
-  10k+ companies
-  314 templates
-  12m+ queries
+    <p class="centered">
+      Discover the benefits of data analytics and make better decisions regarding revenue, customer
+      experience, and overall efficiency.
+    </p>
+
+    <div class="stat">
+      <span class="number">10k+</span>
+      <span class="heading">companies</span>
+    </div>
+    <div class="stat">
+      <span class="number">314</span>
+      <span class="heading">templates</span>
+    </div>
+    <div class="stat">
+      <span class="number">12M+</span>
+      <span class="heading">queries</span>
+    </div>
+  </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
