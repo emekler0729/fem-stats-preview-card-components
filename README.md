@@ -12,7 +12,6 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -29,11 +28,12 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshots/mobile-design.png)
+![](./screenshots/desktop-design.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub Repository](https://github.com/emekler0729/fem-stats-preview-card-components)
+- Live Site URL: [GitHub Pages](https://emekler0729.github.io/fem-stats-preview-card-components/)
 
 ## My process
 
@@ -43,9 +43,6 @@ Users should be able to:
 - CSS custom properties
 - Mobile-first workflow
 - Flexbox
-- CSS Grid
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
@@ -80,29 +77,15 @@ The one factor that I didn't like about this solution is that because the image 
 ```
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+Per the stated design specification, I optimized this component for viewing at 375px and 1440px screen widths; however, the design approach I took leaves responsive glitching and visual artifacts at intermediate widths. The design could be further refined to be responsive at all widths.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- GitHub - [@emekler0729](https://github.com/emekler0729)
+- Frontend Mentor - [@emekler0729](https://www.frontendmentor.io/profile/emekler0729)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+Thanks to Joekahora on GitHub from whom I learned the Monochrome Image Filter solution.
 
-[Background blending author](https://github.com/Joekahora/stats-preview-card)
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+Github - [@Joekahora](https://github.com/Joekahora/stats-preview-card)
