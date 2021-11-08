@@ -1,0 +1,119 @@
+// <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+// <style>
+
+// </style>
+
+$color-background-main: hsl(233, 47%, 7%);
+$color-background-card: hsl(244, 38%, 16%);
+$color-accent: hsl(277, 64%, 61%);
+$color-white: white;
+$color-paragraph: hsla(0, 0%, 100%, 0.75);
+$color-stat: hsla(0, 0%, 100%, 0.6);
+
+$font-inter: "Inter", sans-serif;
+$font-lexend: "Lexend Deca", sans-serif;
+$font-size: 1.5rem;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: calc(10px / 16px * 100%);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background: $color-background-main;
+}
+
+.card {
+    background: $color-background-card;
+    width: max(320px, 90%);
+    border-radius: 10px;
+    overflow: hidden;
+    &__header {
+    }
+
+    &__img-bg-blend {
+        background-color: $color-accent;
+        height: 23rem;
+        width: auto;
+    }
+
+    &__img {
+        background-image: url(../images/image-header-mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        mix-blend-mode: multiply;
+        opacity: 0.8;
+        height: 100%;
+        width: auto;
+    }
+
+    &__content {
+        padding: 3rem 2rem;
+        text-align: center;
+    }
+
+    &__title {
+        color: $color-white;
+        font-family: $font-inter;
+        margin-bottom: 2rem;
+    }
+
+    &__text {
+        color: $color-paragraph;
+        font-family: $font-inter;
+        line-height: 1.6;
+        padding: 0 1rem;
+        margin-bottom: 3rem;
+    }
+
+    &__stats {
+    }
+}
+
+.stat {
+    &:not(:last-of-type) {
+        margin-bottom: 2rem;
+    }
+
+    &__number {
+        color: $color-white;
+        font-family: $font-inter;
+        font-weight: bold;
+        font-size: 2.25rem;
+        margin-bottom: 0.8rem;
+    }
+
+    &__heading {
+        color: $color-paragraph;
+        text-transform: uppercase;
+        font-family: $font-inter;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+}
+
+.accent {
+    color: $color-accent;
+}
+
+.attribution {
+    font-family: $font-inter;
+    font-size: 11px;
+    text-align: center;
+    color: $color-paragraph;
+
+    a {
+        color: $color-accent;
+    }
+}
