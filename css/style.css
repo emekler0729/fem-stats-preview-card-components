@@ -21,13 +21,29 @@ body {
 .card {
   background: #1b1938;
   width: max(320px, 90%);
+  max-width: 450px;
   border-radius: 10px;
   overflow: hidden;
+  margin: 8rem 0 4rem 0;
+}
+@media only screen and (min-width: 980px) {
+  .card {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 940px;
+    justify-content: space-between;
+  }
 }
 .card__img-bg-blend {
   background-color: #aa5cdb;
   height: 23rem;
   width: auto;
+}
+@media only screen and (min-width: 980px) {
+  .card__img-bg-blend {
+    height: 100%;
+    width: 40rem;
+  }
 }
 .card__img {
   background-image: url(../images/image-header-mobile.jpg);
@@ -38,22 +54,67 @@ body {
   height: 100%;
   width: auto;
 }
+@media only screen and (min-width: 980px) {
+  .card__img {
+    background-image: url(../images/image-header-desktop.jpg);
+  }
+}
 .card__content {
-  padding: 3rem 2rem;
+  padding: 4rem 2rem;
   text-align: center;
+}
+@media only screen and (min-width: 980px) {
+  .card__content {
+    padding: 4rem;
+    text-align: left;
+    max-width: 50rem;
+  }
 }
 .card__title {
   color: white;
   font-family: "Inter", sans-serif;
   margin-bottom: 2rem;
 }
+@media only screen and (min-width: 980px) {
+  .card__title {
+    font-size: 3.5rem;
+  }
+}
 .card__text {
   color: rgba(255, 255, 255, 0.75);
   font-family: "Inter", sans-serif;
   line-height: 1.6;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
   margin-bottom: 3rem;
 }
+@media only screen and (max-width: 360px) {
+  .card__text {
+    padding: 0 1.2rem;
+  }
+}
+@media only screen and (min-width: 980px) {
+  .card__text {
+    padding: 0;
+    padding-right: 4rem;
+    margin-bottom: 6rem;
+  }
+}
+.card__stats {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 425px) {
+  .card__stats {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media only screen and (min-width: 980px) {
+  .card__stats {
+    justify-content: space-between;
+  }
+}
+
 .stat:not(:last-of-type) {
   margin-bottom: 2rem;
 }
@@ -81,6 +142,7 @@ body {
   font-size: 11px;
   text-align: center;
   color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 8rem;
 }
 .attribution a {
   color: #aa5cdb;
