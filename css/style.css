@@ -65,7 +65,7 @@ body {
 }
 @media only screen and (min-width: 980px) {
   .card__content {
-    padding: 4rem;
+    padding: 6rem 4rem;
     text-align: left;
     max-width: 50rem;
   }
@@ -96,7 +96,7 @@ body {
   .card__text {
     padding: 0;
     padding-right: 4rem;
-    margin-bottom: 6rem;
+    margin-bottom: 8rem;
   }
 }
 .card__stats {
